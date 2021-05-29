@@ -95,7 +95,31 @@ function reserch(){
 })
 }
 }
-  
+
+
+//This method saves the book
+	function saving(book){
+		var i = sessionStorage.length ++
+		var test = document.getElementById(book).childNodes[6]
+		var deleting = document.createElement("button")
+		deleting.setAttribute("value","Supprimer")
+		var result = document.getElementById(book)
+		result.replaceChild(deleting,test)
+		var saving = "<div class = 'saving' id='storage" + i +"'>" + document.getElementById(book).innerHTML + "</div>"
+		console.log(test)
+		sessionStorage.setItem(i, saving)
+		var result = sessionStorage.getItem(i)
+		myList.innerHTML +=  result 		
+	}
+
+	
+	
+	for (a=0; a<sessionStorage.length; a++){
+		var results = sessionStorage.getItem(a)
+		myList.innerHTML += results
+	}
+
+
 button3.addEventListener("click", cancelSearch);
 function cancelSearch() {
 	container.replaceChild(button, button2);
@@ -104,3 +128,6 @@ function cancelSearch() {
 	container.removeChild(bookAuthor);
 	list.innerHTML = ""
 }
+
+
+  
