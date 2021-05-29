@@ -82,3 +82,35 @@ input[name~="3"]{
 div.space{
     margin-top: 10px; 
 }
+
+#output{
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-left: 5px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2%;
+    height: 2000px;
+}
+
+.research{  
+    text-align: left;
+    background: rgba(161, 173, 181, 0.3);
+    border-radius: 11px;
+    height: auto;
+}
+
+.image-resize{
+margin-top: auto;
+margin-left: 40%;
+height: 180px;
+
+}
+
+.title{
+    font-family: 'Ubuntu-bold';
+}
+
+.id {
+    font-family: 'Ubuntu-italic';
+}
