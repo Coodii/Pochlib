@@ -96,3 +96,11 @@ function reserch(){
 }
 }
   
+button3.addEventListener("click", cancelSearch);
+function cancelSearch() {
+	container.replaceChild(button, button2);
+	container.removeChild(button3);
+	container.removeChild(bookName);
+	container.removeChild(bookAuthor);
+	list.innerHTML = ""
+}
